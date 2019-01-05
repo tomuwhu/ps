@@ -1,0 +1,29 @@
+{
+  "name": "ps",
+  "version": "1.0.0",
+  "description": "tnemeth personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomuwhu/ps.git"
+  },
+  "keywords": [
+    "personal",
+    "vue-cli",
+    "express"
+  ],
+  "author": "Dr. Németh Tamás",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomuwhu/ps/issues"
+  },
+  "homepage": "https://github.com/tomuwhu/ps#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  }
+}
