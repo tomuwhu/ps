@@ -14,12 +14,22 @@
         </b-dropdown-item>
         <b-dropdown-item> 
           <router-link to="/infalap">
-            Informatikai és számítástechnikai alapismeretek és alkalmazások
+            Informatikai alapismeretek
+          </router-link>
+        </b-dropdown-item>
+        <b-dropdown-item> 
+          <router-link to="/infalap">
+            Informatikai alkalmazások
+          </router-link>
+        </b-dropdown-item>
+        <b-dropdown-item> 
+          <router-link to="/infalap">
+            Számítástechnikai alapismeretek
           </router-link>
         </b-dropdown-item>
         <b-dropdown-item> 
           <router-link to="/szakm">
-          Szakmódszertan I.
+            Szakmódszertan I.
           </router-link>
         </b-dropdown-item>
         <b-dropdown-divider></b-dropdown-divider>
