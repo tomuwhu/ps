@@ -1,3 +1,3 @@
 module.exports = {
-    baseUrl: './'
+    baseUrl: 'http://www.inf.u-szeged.hu/u/tnemeth/'
 }
