@@ -7,9 +7,17 @@
 <script>
   var markdown = require( "markdown" ).markdown
   let targy = markdown.toHTML( `
-# Informatikai alapismeretek (Fogorvos szak)
-# Informatikai alkalmazások (Informatikatanár szak)
-# Számítástechnikai alapismeretek (BIOLÓGUS MSc - Bioinformatika szakirány)
+# Informatikai alapismeretek
+
+(Fogorvos szak)
+
+# Informatikai alkalmazások 
+
+(Informatikatanár szak)
+
+# Számítástechnikai alapismeretek 
+
+(BIOLÓGUS MSc - Bioinformatika szakirány)
 
 ## Ismeretanyag:
 
