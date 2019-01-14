@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h4>Oktatott tárgyak:</h4>
+    <h4>Rólam</h4>
   </div>
 </template>
 <style>
