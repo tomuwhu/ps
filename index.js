@@ -8,4 +8,10 @@ app.use(cors())
 
 app.use('/', express.static('front-end/dist'))
 
+app.use('/elemiinf', express.static('front-end/dist'))
+
+app.use('/infalap', express.static('front-end/dist'))
+
+app.use('/szakm', express.static('front-end/dist'))
+
 app.listen(port, () => console.log(`Started on ${port}!`))
