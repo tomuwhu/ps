@@ -53,6 +53,10 @@
   </div>
 </template>
 
+<script>
+ document.title="Dr. Németh Tamás"
+</script>
+
 <style>
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Crimson+Text|Indie+Flower|Pacifico|Special+Elite');
 

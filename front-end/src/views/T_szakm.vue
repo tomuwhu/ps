@@ -11,17 +11,17 @@
 
 ## Ismeretanyag
 
-- az informatika, mint modellezés
-- az informatika, mint emberek közötti kommunikációs eszköz
-- az informatika, mint virtuális valóság
-- játékok virtuális terekben, interaktív médiák
-- virtuális világok a tanulásban, kutatásban
-- az információs társadalom és az ember
-- informatikai intelligencia, informatikai kompetenciák
-- az informatikai tudás helye a társadalmban
-- nevelési elvek az informatika órán, szocializációs szerep
-- az informatika használata és a kommunikációs „illemszabályok”
-- az autentikáció jelentősége és szabályai
+- az informatika, mint modellezés,
+- az informatika, mint emberek közötti kommunikációs eszköz,
+- az informatika, mint virtuális valóság,
+- játékok virtuális terekben, interaktív médiák,
+- virtuális világok a tanulásban, kutatásban,
+- az információs társadalom és az ember,
+- informatikai intelligencia, informatikai kompetenciák,
+- az informatikai tudás helye a társadalmban,
+- nevelési elvek az informatika órán, szocializációs szerep,
+- az informatika használata és a kommunikációs „illemszabályok”,
+- az autentikáció jelentősége és szabályai,
 
 ## Megszerezhető szakterületi tudás / készség / képesség (kompetenciák)
 
