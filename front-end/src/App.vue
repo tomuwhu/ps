@@ -65,6 +65,9 @@
 
 <script>
  document.title="Dr. Németh Tamás"
+ module.exports = {
+
+ }
 </script>
 
 <style>

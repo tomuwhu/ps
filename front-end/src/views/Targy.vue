@@ -1,6 +1,8 @@
 <template>
   <div class="body">
-    <div v-html="targyak.get(id)"></div>
+    {{id}} - {{vdoc}} - {{vkc}}
+    <div v-if="id===vdoc" v-html="vhtml"></div>
+    <div v-else>{{dbq(id)}}</div>
   </div>
 </template>
 
@@ -9,21 +11,23 @@ const md = require( "markdown" ).markdown.toHTML
 module.exports = {
   props: ['id'],
   data: () => ({
-      targyak: new Map
+    vhtml: 'Vucli',
+    vdoc: '',
+    vkc: ''
   }),
-  beforeMount() {
-      this.targyak.set(
-          'elemiinf',
-          md( `## Elemi Informatika` )
-      )
-      this.targyak.set(
-          'infalap',
-          md( `## Informatikai alapismeretek` )
-      )
-      this.targyak.set(
-          'szakm',
-          md( `## Szakmódszertan` )
-      )
+  mounted() {
+        this.dbq(this.id)
+  },
+  methods: {
+      dbq(targy) {
+          this.axios
+            .get( '/getkurz/' + targy )
+            .then( resp => {
+                this.vhtml = md(resp.data.rows[0].leiras)
+                this.vdoc = resp.data.rows[0].kl
+                this.vkc = resp.data.rows[0].kurzuscim
+            })
+      }
   }
 }
 </script>
