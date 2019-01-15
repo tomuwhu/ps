@@ -21,7 +21,7 @@ module.exports = {
   methods: {
       dbq(targy) {
           this.axios
-            .get( '/getkurz/' + targy )
+            .get( '/u/tnemeth/getkurz/' + targy )
             .then( resp => {
                 this.vhtml = md(resp.data.rows[0].leiras)
                 this.vdoc = resp.data.rows[0].kl
