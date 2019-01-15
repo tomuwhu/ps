@@ -21,7 +21,7 @@ app.use('/infalap', express.static('front-end/dist'))
 
 app.use('/szakm', express.static('front-end/dist'))
 
-app.get('/getkurz/:kn', (req,res) => {
+app.get('/u/tnemeth/getkurz/:kn', (req,res) => {
     conn.query(`
         SELECT * 
         FROM web_kurzk 
