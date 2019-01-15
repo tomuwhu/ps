@@ -8,27 +8,27 @@
       </b-nav-item>
       <b-nav-item-dropdown id="ddown" text="Oktatott tárgyak" left>
         <b-dropdown-item>
-          <router-link to="/elemiinf">
+          <router-link to="/targy/elemiinf">
             Elemi informatika II.
           </router-link>
         </b-dropdown-item>
         <b-dropdown-item> 
-          <router-link to="/infalap">
+          <router-link to="/targy/infalap">
             Informatikai alapismeretek
           </router-link>
         </b-dropdown-item>
         <b-dropdown-item> 
-          <router-link to="/infalap">
+          <router-link to="/targy/infalap">
             Informatikai alkalmazások
           </router-link>
         </b-dropdown-item>
         <b-dropdown-item> 
-          <router-link to="/infalap">
+          <router-link to="/targy/infalap">
             Számítástechnikai alapismeretek
           </router-link>
         </b-dropdown-item>
         <b-dropdown-item> 
-          <router-link to="/szakm">
+          <router-link to="/targy/szakm">
             Szakmódszertan I.
           </router-link>
         </b-dropdown-item>

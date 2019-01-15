@@ -1,4 +1,4 @@
 module.exports = {
-    baseUrl: '/u/tnemeth/'
-    //baseUrl: './'
+    //baseUrl: '/u/tnemeth/'
+    baseUrl: './'
 }

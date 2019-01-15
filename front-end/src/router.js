@@ -5,6 +5,7 @@ import About from './views/About.vue'
 import ElemiInf from './views/T_elemiinf.vue'
 import InfAlap from './views/T_infalap.vue'
 import Szakmt from './views/T_szakm.vue'
+import Targy from './views/Targy.vue'
 
 Vue.use(Router)
 
@@ -17,22 +18,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About
-    },
-    {
-      path: '/elemiinf',
-      name: 'elemiinf',
-      component: ElemiInf
-    }, {
-      path: '/infalap',
-      name: 'infalap',
-      component:InfAlap
-    }, {
-      path: '/szakm',
-      name: 'szakm',
-      component: Szakmt
+      path: '/targy/:id',
+      component: Targy,
+      props: true
     }
   ]
 })
