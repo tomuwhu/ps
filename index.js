@@ -16,7 +16,7 @@ app.use(cors())
 app.use('/', express.static('front-end/dist'))
 
 app.use('/targy/*',  (req,res) => { 
-    res.redirect('/')
+    res.redirect('/u/tnemeth/')
 })
 
 app.get('/getkurz/:kn', (req,res) => {
