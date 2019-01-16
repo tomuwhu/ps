@@ -15,7 +15,9 @@ app.use(cors())
 
 app.use('/', express.static('front-end/dist'))
 
-app.use(/targy/i, express.static('front-end/dist'))
+app.use('/targy/*',  (req,res) => { 
+    res.redirect('/')
+})
 
 app.get('/getkurz/:kn', (req,res) => {
     conn.query(`
