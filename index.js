@@ -4,22 +4,18 @@ const cors = require('cors')
 const app = express()
 const port = 3000
 const conn = mysql.createConnection({
-    host: "mysql",
+    //host: "mysql",
+    host: "localhost",
     user: "tnemeth",
     password: "tom432",
     database: "tnemeth"
 })
 conn.connect()
 app.use(cors())
-//app.get('/', (req, res) => res.send('Hello World!'))
 
 app.use('/', express.static('front-end/dist'))
 
-app.use('/elemiinf', express.static('front-end/dist'))
-
-app.use('/infalap', express.static('front-end/dist'))
-
-app.use('/szakm', express.static('front-end/dist'))
+app.use(/targy/i, express.static('front-end/dist'))
 
 app.get('/getkurz/:kn', (req,res) => {
     conn.query(`
@@ -30,7 +26,17 @@ app.get('/getkurz/:kn', (req,res) => {
             res.send({ param: req.params.kn, err,rows })
         } 
     ) 
-    
+})
+
+app.get('/getallkurz', (req,res) => {
+    conn.query(`
+        SELECT kl, kurzuscim 
+        FROM web_kurzk 
+        ORDER BY kurzuscim
+    `,  (err,rows) => {
+            res.send({ err, rows })
+        } 
+    ) 
 })
 
 app.listen(port, () => console.log(`Started on ${port}!`))
