@@ -34,7 +34,7 @@ module.exports = {
 }
 </script>
 
-<style>
+<style scoped>
 .body {
   margin: 32px;
 }
